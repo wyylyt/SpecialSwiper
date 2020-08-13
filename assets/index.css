@@ -1,0 +1,67 @@
+.swiperCom-box {
+  /* min-height: 4.06rem; */
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+  position: relative;
+}
+.swiperCom-box * {
+  box-sizing: border-box;
+}
+.swiperCom-box .my-swiper.swiper-container2 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.swiperCom-box .my-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiperCom-box .swiper-dots-cont {
+  width: 100%;
+  height: 0.1rem;
+  padding: 0 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, -0.3rem, 0);
+  z-index: 9999;
+  position: relative;
+}
+.swiperCom-box .swiper-dots-cont .swiper-dot-item {
+  flex: 1;
+  height: 0.06rem;
+  border-radius: 0.03rem;
+  background: #fff;
+  opacity: 1;
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+.swiperCom-box .swiper-dots-cont .swiper-dot-item.swiper-dot-item-slide {
+  background: #ca3028;
+}
+
+.swiperCom-box .swiper-dots-cont .swiper-dot-item.active .animateDot{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #ca3028;
+  display: inline-block;
+  animation: mymove 3s linear;
+  border-radius: 0.03rem;
+}
+
+ @keyframes mymove {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

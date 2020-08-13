@@ -1,0 +1,74 @@
+<!--
+ * @Author: wanjikun
+ * @LastEditTime: 2020-08-13 16:49:48
+ * @description: Do not edit
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/swiper3.4.2.css">
+    <link rel="stylesheet" href="./assets/index.css">
+
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0;
+        }
+        html {
+            font-size: 13.33333333333333vmin;
+        }
+        .swiper-container{
+            width: 100%;
+            height: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiperCom-box">
+            <div class="swiper-container2 my-swiper">
+              <div class="swiper-wrapper">
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="swiper-dots-cont">
+              
+            </div>
+          </div>
+    </div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./assets/swiper3.4.2.js"></script>
+<script src="./assets/index.js"></script>
+<script>
+    $('#swiper-container').createSwiper({
+        swiperEl:'.swiper-container',
+        swiperDotsEl:'.swiper-dots-cont',
+        data:[{
+                id: 472,
+                rotationimg:
+                  "https://yswlgapplet.cqliving.com/2020/08/10/d150e5ba-cc10-4a01-924b-f3a7198259f0.png"
+              },
+              {
+                id: 473,
+                rotationimg:
+                  "https://yswlgapplet.cqliving.com/2020/08/10/ab6729f8-df05-4957-b744-271968cd4b19.png"
+              },
+              {
+                id: 478,
+                rotationimg:
+                  "https://yswlgapplet.cqliving.com/2020/08/10/e15cf16a-3c88-4f53-8911-76dc7adaacb1.png"
+              },
+              {
+                id: 470,
+                rotationimg:
+                  "https://yswlgapplet.cqliving.com/2020/08/10/e15cf16a-3c88-4f53-8911-76dc7adaacb1.png"
+              }]
+    },function(id) {
+        console.log('idd',id);
+    })
+</script>
+</html>
